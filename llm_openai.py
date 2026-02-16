@@ -1,9 +1,8 @@
 import os
 from openai import OpenAI
 
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-# Жёсткая схема: всегда вернём {"description": "..."}.
+# strict schema: {"description": "..."}.
 SCHEMA = {
     "name": "company_description",
     "schema": {
